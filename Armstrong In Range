@@ -1,0 +1,18 @@
+def Armstrong(num):
+    power = len(str(num))
+    add = 0
+    for n in str(num):
+        add = add + int(n)**power
+    if add == num:
+        return 'Armstrong'
+    else:
+        return "not Armstrong"
+        
+def ArmstrongInRange(num1, num2):
+    a = []
+    for num in range(num1, num2):
+        b = Armstrong(num)
+        if b == 'Armstrong':
+            a.append(num)
+    
+    return a
