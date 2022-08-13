@@ -1,0 +1,5 @@
+def AddAll(num):
+    add = 0
+    for i in num:
+        add += i
+    return add
