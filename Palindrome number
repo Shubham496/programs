@@ -1,0 +1,5 @@
+def Reverse(num):
+    return str(num)[::-1]
+
+def Palindrome(num):
+    return 'Palindrome' if str(num)==Reverse(num) else "Not Palindrome"
