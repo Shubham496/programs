@@ -1,0 +1,13 @@
+def FibonacciSeries(num):
+    n,m = 0,1
+    if num<=2:
+        return "num is small, first 2 elements are [0,1]"
+    lis = [0,1]
+    for i in range(num):
+        lis.append(n+m)
+        n,m = m, m+n
+        if len(lis)>= num:
+            break
+    return lis
+        
+    
