@@ -1,0 +1,2 @@
+def Reverse(num):
+    return str(num)[::-1]
