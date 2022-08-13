@@ -1,0 +1,26 @@
+def AddAll(num):
+    add = 0
+    for i in num:
+        add += i
+    return add
+
+def Factors(num):
+    a = []
+    for i in range(1,num+1):
+        if num%i==0:
+            a.append(i)
+    return a
+
+def FriendlyPair(num1, num2):
+    a = Factors(num1)
+    a.pop(-1)
+    b = Factors(num2)
+    b.pop(-1)
+    a = AddAll(a)
+    b = AddAll(b)
+    ratio1 = num1/a
+    ratio2 = num2/b
+    if ratio1==ratio2:
+        return "Friendly Pair"
+    else:
+        return "Not Friendly Pair"
